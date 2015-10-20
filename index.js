@@ -40,7 +40,7 @@
             }
 
             if(stat.isDirectory() && includeSubdirs){
-                getFilesInDir(file, true, predicate, queue);
+                getFilesInDir(fullPath, true, predicate, queue);
             }
         });
         return queue;
